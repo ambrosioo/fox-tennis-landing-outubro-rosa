@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Outubro Rosa Fox Tennis - Jogue por Todas Nós</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+    .hero-bg {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+        url('https://images.unsplash.com/photo-1554013423-45a4980500a5?q=80&w=2070&auto=format&fit=crop');
+      background-size: cover;
+      background-position: center;
+    }
+    .cta-button {
+      background: linear-gradient(90deg, #ec4899, #f97316, #1e3a8a);
+      background-size: 300% 300%;
+      animation: gradientMove 6s ease infinite;
+      transition: all 0.3s ease;
+    }
+    .cta-button:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.25);
+    }
+    @keyframes gradientMove {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+    .feature-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 15px 25px rgba(0,0,0,0.1);
+      transition: all 0.3s ease;
+    }
+    .guest-img:hover {
+      transform: scale(1.05) rotate(1deg);
+      transition: transform 0.4s ease;
+      box-shadow: 0 0 15px rgba(236,72,153,0.6);
+    }
+  </style>
+</head>
+<body class="bg-gray-50">
+
+  <!-- HERO SECTION -->
+  <header class="hero-bg text-white relative">
+    <div class="container mx-auto px-6 py-16 md:py-24 text-center" data-aos="fade-up">
+      <img src="logo.png" alt="Logo Fox Tennis" class="h-24 mx-auto mb-6">
+      <h1 class="text-4xl md:text-6xl font-black uppercase tracking-wider mb-4">
+        Jogue por Todas Nós
+      </h1>
+      <p class="text-lg md:text-2xl font-light mb-8 max-w-3xl mx-auto">
+        No Outubro Rosa, a Fox Tennis convida você para um dia de força, união e esporte. Participe de um aulão de tênis 100% gratuito e exclusivo para mulheres.
+      </p>
+      <a href="#inscricao" class="cta-button inline-block text-white font-bold text-xl py-4 px-10 rounded-lg shadow-lg uppercase">
+        Garanta sua vaga agora!
+      </a>
+      <p class="mt-4 text-sm">Vagas limitadas para uma experiência exclusiva!</p>
+      <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 animate-bounce">
+        <svg class="w-8 h-8 text-pink-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+        </svg>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main>
+    <!-- Section: O que esperar -->
+    <section class="py-16 md:py-24 bg-white">
+      <div class="container mx-auto px-6 text-center" data-aos="fade-up">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+          Um Dia Feito para <span class="text-pink-600">Você</span>
+        </h2>
+        <p class="text-lg text-gray-600 max-w-3xl mx-auto mb-12">
+          Esqueça a rotina. No dia 05 de outubro, a quadra é sua. Um espaço seguro e acolhedor para você descobrir um novo esporte, cuidar da sua saúde e se conectar com outras mulheres incríveis.
+        </p>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Feature 1 -->
+          <div class="feature-card bg-gray-50 p-8 rounded-xl shadow-sm" data-aos="zoom-in" data-aos-delay="100">
+            <svg class="w-12 h-12 mx-auto mb-4 text-pink-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+            </svg>
+            <h3 class="text-xl font-bold text-gray-900 mb-2">Energia Renovada</h3>
+            <p class="text-gray-600">Sinta a potência de cada raquetada. O tênis é mais que um esporte, é uma terapia que movimenta o corpo e acalma a mente.</p>
+          </div>
+          <!-- Feature 2 -->
+          <div class="feature-card bg-gray-50 p-8 rounded-xl shadow-sm" data-aos="zoom-in" data-aos-delay="200">
+            <svg class="w-12 h-12 mx-auto mb-4 text-pink-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M15 21a6 6 0 00-9-5.197M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+            </svg>
+            <h3 class="text-xl font-bold text-gray-900 mb-2">Conexões Reais</h3>
+            <p class="text-gray-600">Conheça outras mulheres, compartilhe histórias e faça parte de uma comunidade que se apoia dentro e fora das quadras.</p>
+          </div>
+          <!-- Feature 3 -->
+          <div class="feature-card bg-gray-50 p-8 rounded-xl shadow-sm" data-aos="zoom-in" data-aos-delay="300">
+            <svg class="w-12 h-12 mx-auto mb-4 text-pink-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+            </svg>
+            <h3 class="text-xl font-bold text-gray-900 mb-2">Causa Nobre</h3>
+            <p class="text-gray-600">Este evento é um lembrete sobre a importância do autocuidado e da prevenção. Jogue por você, jogue por todas nós.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section: Convidadas -->
+    <section class="py-16 md:py-24 bg-blue-900 text-white relative overflow-hidden">
+      <div class="container mx-auto px-6 text-center" data-aos="fade-up">
+        <h2 class="text-3xl md:text-4xl font-bold mb-12">Inspiração em Quadra</h2>
+        <p class="text-lg text-blue-200 max-w-3xl mx-auto mb-12">
+          Teremos a presença de mulheres que são referência no esporte, prontas para compartilhar suas jornadas, dar dicas e jogar com você.
+        </p>
+        <div class="flex flex-wrap justify-center gap-8">
+          <div class="w-full sm:w-1/2 md:w-1/4" data-aos="flip-left" data-aos-delay="100">
+            <img src="https://placehold.co/300x300/e9d5ff/4c1d95?text=Atleta+1" alt="Convidada Especial 1" class="guest-img rounded-full w-40 h-40 mx-auto mb-4 border-4 border-pink-500 object-cover">
+            <h3 class="text-xl font-bold">Nome da Atleta</h3>
+            <p class="text-blue-300">Campeã Estadual</p>
+          </div>
+          <div class="w-full sm:w-1/2 md:w-1/4" data-aos="flip-left" data-aos-delay="200">
+            <img src="https://placehold.co/300x300/fbcfe8/86198f?text=Atleta+2" alt="Convidada Especial 2" class="guest-img rounded-full w-40 h-40 mx-auto mb-4 border-4 border-pink-500 object-cover">
+            <h3 class="text-xl font-bold">Nome da Profissional</h3>
+            <p class="text-blue-300">Técnica e Preparadora Física</p>
+          </div>
+          <div class="w-full sm:w-1/2 md:w-1/4" data-aos="flip-left" data-aos-delay="300">
+            <img src="https://placehold.co/300x300/fecaca/991b1b?text=Convidada" alt="Convidada Especial 3" class="guest-img rounded-full w-40 h-40 mx-auto mb-4 border-4 border-pink-500 object-cover">
+            <h3 class="text-xl font-bold">Nome da Convidada</h3>
+            <p class="text-blue-300">Influenciadora de Bem-Estar</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section: Formulário -->
+    <section id="inscricao" class="py-16 md:py-24 bg-gray-100">
+      <div class="container mx-auto px-6">
+        <div class="max-w-2xl mx-auto text-center" data-aos="fade-up">
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Sua Vaga Está a Um Clique de Distância</h2>
+          <p class="text-lg text-gray-600 mb-8">
+            As vagas são limitadas para garantir que todas tenham a melhor experiência. Preencha seus dados e confirme sua presença. É rápido, fácil e 100% gratuito.
+          </p>
+        </div>
+        <div class="max-w-xl mx-auto bg-white p-8 rounded-xl shadow-lg" data-aos="zoom-in">
+          <form target="_blank" action="https://formsubmit.co/matheusambrosiofisico@gmail.com" method="POST">
+            <input type="hidden" name="_subject" value="Nova Inscrição - Evento Outubro Rosa!">
+            <input type="text" name="_honey" style="display:none">
+            <input type="hidden" name="_captcha" value="false">
+
+            <div class="mb-4">
+              <label for="name" class="block text-gray-700 font-bold mb-2">Nome Completo:</label>
+              <input type="text" id="name" name="name" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-500" placeholder="Seu nome aqui" required>
+            </div>
+            <div class="mb-6">
+              <label for="whatsapp" class="block text-gray-700 font-bold mb-2">WhatsApp (com DDD):</label>
+              <input type="tel" id="whatsapp" name="whatsapp" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-500" placeholder="(XX) XXXXX-XXXX" required>
+              <p class="text-xs text-gray-500 mt-1">Vamos te adicionar ao nosso grupo exclusivo do evento!</p>
+            </div>
+            <button type="submit" class="cta-button w-full text-white font-bold text-xl py-4 px-10 rounded-lg shadow-lg uppercase">
+              Quero me inscrever gratuitamente!
+            </button>
+          </form>
+
+          <div class="flex items-center my-6">
+            <div class="flex-grow border-t border-gray-300"></div>
+            <span class="flex-shrink mx-4 text-gray-500">OU</span>
+            <div class="flex-grow border-t border-gray-300"></div>
+          </div>
+
+          <a href="https://wa.me/5521970962362?text=Quero%20fazer%20minha%20inscri%C3%A7%C3%A3o%20no%20evento%20do%20Outubro%20Rosa%20%F0%9F%8E%BE" target="_blank" class="cta-button w-full text-white font-bold text-xl py-4 px-10 rounded-lg shadow-lg uppercase flex items-center justify-center">
+            <svg class="w-6 h-6 mr-3" fill="currentColor" viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.31 20.6C8.75 21.39 10.36 21.82 12.04 21.82C17.5 21.82 21.95 17.37 21.95 11.91C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2Z"/></svg>
+            Inscrição via WhatsApp
+          </a>
+
+          <p class="text-center text-sm text-gray-500 mt-6">
+            <svg class="inline w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
+            </svg>
+            Seus dados estão 100% seguros.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-blue-900 text-white">
+    <div class="container mx-auto px-6 py-8 text-center" data-aos="fade-up">
+      <img src="logo.png" alt="Logo Fox Tennis" class="h-16 mx-auto mb-4">
+      <p class="mb-2">&copy; 2025 Fox Tennis. Todos os direitos reservados.</p>
+      <p class="text-sm text-blue-300">Rua Dr. Getúlio Vargas, 114 - Barro Vermelho, São Gonçalo - RJ</p>
+      <div class="flex justify-center space-x-4 mt-4">
+        <a href="https://www.instagram.com/fox_tennis/" target="_blank" rel="noopener noreferrer" class="text-blue-200 hover:text-white">Instagram</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- AOS Script -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000, once: true });
+  </script>
+</body>
+</html>
