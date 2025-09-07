@@ -14,12 +14,6 @@
     body {
       font-family: 'Inter', sans-serif;
     }
-    .hero-bg {
-      background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
-        url('https://images.unsplash.com/photo-1554013423-45a4980500a5?q=80&w=2070&auto=format&fit=crop');
-      background-size: cover;
-      background-position: center;
-    }
     .cta-button {
       background: linear-gradient(90deg, #ec4899, #f97316, #1e3a8a);
       background-size: 300% 300%;
@@ -45,13 +39,41 @@
       transition: transform 0.4s ease;
       box-shadow: 0 0 15px rgba(236,72,153,0.6);
     }
+    /* Overlay effect */
+    .video-overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.6);
+      z-index: 1;
+    }
+    .hero-content {
+      position: relative;
+      z-index: 2;
+    }
+    .hero-video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: 0;
+    }
   </style>
 </head>
 <body class="bg-gray-50">
 
   <!-- HERO SECTION -->
-  <header class="hero-bg text-white relative">
-    <div class="container mx-auto px-6 py-16 md:py-24 text-center" data-aos="fade-up">
+  <header class="relative text-white h-screen flex items-center justify-center overflow-hidden">
+    <!-- Background video -->
+    <video class="hero-video" autoplay muted loop playsinline>
+      <source src="meninas_jogando.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <!-- Dark overlay -->
+    <div class="video-overlay"></div>
+    <!-- Hero content -->
+    <div class="hero-content container mx-auto px-6 text-center" data-aos="fade-up">
       <img src="logo.png" alt="Logo Fox Tennis" class="h-24 mx-auto mb-6">
       <h1 class="text-4xl md:text-6xl font-black uppercase tracking-wider mb-4">
         Jogue por Todas Nós
@@ -63,7 +85,7 @@
         Garanta sua vaga agora!
       </a>
       <p class="mt-4 text-sm">Vagas limitadas para uma experiência exclusiva!</p>
-      <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 animate-bounce">
+      <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 animate-bounce z-10">
         <svg class="w-8 h-8 text-pink-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
         </svg>
